@@ -20,8 +20,13 @@ Dart used pub get --offline; .NET used only local feeds and NuGetAudit=false.
 Generated build outputs/dependencies and temporary consumer directories were
 removed after verification. Dependency lockfiles and synthetic vectors remain.
 Final documentation/repository metadata edits do not change runtime behavior.
-No GitHub or registry publication was performed by this staging work. Independent
-CI is prepared but has not run yet for this repository.
+The staging validation preceded source publication. The reviewed source is now
+public at [`proudbase/proudauth-sdk-dart`](https://github.com/proudbase/proudauth-sdk-dart).
+The [initial independent CI run](https://github.com/proudbase/proudauth-sdk-dart/actions/runs/38454443159)
+passed at commit `9e119bc1a02c5380941c124a8bf8ef52541109ba` on Dart 3.13.3 on Ubuntu 24.04.
+Locked restore, analysis, formatting and all 216 tests passed.
+GitHub private vulnerability reporting is enabled. No package-registry release
+or SDK release tag has been published.
 
 Excluded: original .git history, actual .env/credentials, deployment state,
 private screenshots/database backups, SDK caches/build output, image archives,
