@@ -1,0 +1,44 @@
+{
+  "description": "Test-only private keys used by the Dart test signer (test/support/signer.dart) to mint tokens at test time. Never trust them anywhere.",
+  "rsa": [
+    {
+      "d": "CZk9aFXKdvCx_nHrVvub8oAlBKDgrWKKCs47E5_BNeQ2bG_SnrZ1XSpbm22J38-O_R5KH_BZkb09V7ffOZ6yrMeJNDK8g29VIpA_CfTBC73yXszLuin9XWg9xJ_GLDnD2_beTBMlM9hoKmtE30R2oQbBVD_aVlsprhBs8mmZfNCJW44DH0FUktkb7TecBaavYms7QzmSVq93-NgrLM2EwFrDyHASlP40G6i-CVyFrdpxE7pPhWuMShYKK0og8nfhFLNjy0s_lgz1tLnhtd1mVt3gf0wAUDr4x5tqnJoYvsz3uoWQgnrormQLzb9BKvRfuLb7rG8boxSKlKZyaadexQ",
+      "dp": "bNqjsiTDcOewPwv7SGUfFO2h85g6jnkatLAuuWUiPweRYBRjief_89bCN4oiGL2s-RsGxK-XJXZOhlPQ1O7kDWvLAJ7XUBG2yOyaxrc7dHvNgrXG0G-kS2q8wh0R3nosZHW39upgfQwYx_iiSCYYV1cyWgUhCi8H1LRqbu9T-MU",
+      "dq": "mpShdrFL5YlFfLZS8asuBu3dbn055li7qQ80JQTKvhvdbTJ71_mZ7UMpHN7jYm8pIeZk-0NRI1LMdNuzQkSXAXHz6Z2CI0x43O1tM_dNjQVpGZ2CnAdWDqQy4O7q9cH3dj7HCIyJ0ly6v86HsyTkuoJakul3lTZgQAemj5xWXL0",
+      "e": "AQAB",
+      "kid": "rsa-test-1",
+      "kty": "RSA",
+      "n": "1j5xuagvSNU8zKOUdFI2NJCMwNCYvZT9B-Nbe1-CGvFlvBW_4G1xyCQO8VSQOJ9YB_5Cj7n2hZJygiehaNhSDNo2I0DgkzqWXzl93TYpOwrxb17RnNxMmkmeddZtwGrdSw_oiqY4lXmgp2umUDluG7Tx8h5Avwld-RqcUCfRjDlnxn3caPS5SC62p71XgfNLhdMLTEnThc7hPCOna6h-HWg-uxjbA71grLr_hLHPNbaUJSQ3t_aLQ59G3hyBCG_f_W_VMU9bCmV3Ar_grtJxXZ6bhXgMqT9OOqxDhfvl9m1JauWK7Fp8vQEV3wgMgXmcM3QoptnbNtvu91qwzLG6-Q",
+      "p": "2cckqG4TxOGj7kcSNi0KeOrgG_aLkE6Yf3-8zefNZF94RLDlDnw1a9nZIY9SeDDvQEEE081Ds2Tr27HYNmOxwoLjEpEjNJIpIH1RMPvYBE7aJhGMa2VNYCmTmTugn6SOmGgg-9hbtgNj6_FDWtPZh92wtD0K43npjbeQnf_dzYc",
+      "q": "-9iEi8WeuXsp2Y9asAR6dSYL6m4ZtUCBiEw_t9z4hYjCpQgjzplIocfo4tCDXL2EuPYncTFZbn37L8T-S1Ln-DdtPg73du9kEHwWQe9I8lySd_dSJOX7_ZIQgLfEdloFUloshMBPnrKBeTe7r7CGZ6BRMBMBlSW_gmYLed1KU38",
+      "qi": "jBGZgv6eU8jqdDiaXjBSJrBVV-abGHtHBw2sAR0BZtBb-mrqhmjffuBMymsNLQl89YwgC8s2CHl2FqGzagRtfMLRkaHVTGoNEVwhb7MIdt-jS6LDMtdTg98HyBYHBlAENGDZIA4YdFrEj_0JJX2eLwnrnrZUI3ovRBBI1eKPBRI",
+      "use": "sig"
+    },
+    {
+      "d": "C2DA0xIXYxhIEC5dXDQjW6rGf7W3EsHG4DuKbHMI95qSUvq-6SxWbNCL2tu-V_zoZ3WdfEF9vzPkrqO1NHEgfTTmpt60_KYgQlPTaA5bfUk6_fmbScpbwGSIASi73Y1rxFEAhdW2zkR7nupuvzBgZuwtG1azDXb1n4kEhEdMg1YFaq5J_FlNPUQJaIvMzTFDGz7WULci-ZZciZpCKWiTSZnfiXSvfCjHAL273xG_3yjuyLPxt9NKnwa6iOrtpJOepj-0uH7zhUpXUXOIeVpXLGBj4w6zKk_XQWRRIp_8_f6VpnQJrzu6svgbabzYxxOAgACYlQHoAks2akjPHOrVQQ",
+      "dp": "YELs10DhZw5sIBLU7V2McWXj7X2hVoRo0BpBi_dkwBdta2JWhjWJ_nciauraAF--Bbik3g31dK3JQ075YMRO7-xgZgQHNoZUHPzPi11cjjaKhjlMJokZDD01LBqv0zWLyStowy6iZXNnX4yJAqyHF2GXfHZE8SfPROn_9bzb9mk",
+      "dq": "M81Qh9sL4Fz1063UenR4bgtXlzlDd7VHyjcPbeKGBeeiIDw7UDSN37dD3916ktLpJyujJPZwSUQ_mazXfntIB5BOcGf7tKKgUXgkB8z5TyJCgGXFuOAGkDmDbqUUFJyNUgZrrd4RRRlNw6cVE4q4F9aIWYitSpMvsmdFd4FWnxU",
+      "e": "AQAB",
+      "kid": "rsa-test-2",
+      "kty": "RSA",
+      "n": "1sS726TArWUZZe4fc7kvLLEeRCUSUg2v7U13vb-Du9ZDEEzSR5zfpH7eoQCtscnC-fSRPnMrs3BcNIbFnV690Adc4ubrmi72AXsdMH-r6xzsednAi5-r2kULCX4C0qztQKWEohT8wSCU5VAMgbR3sLTLd27GgCX6lIuBkfoo5Q90ScRlTmBxQOI745emlPUczg5t1k5Cj0PO1Azt_FixY4mRvI61S-VH5yw9_QMshuOFXGO9ub2jac-uIgmGRTEUrVl8UWgtmpQmL9V1OTHNPrMQwdLzniIWsjQPO2pLI8iF15KisUj3d1XAJRh0Y0llrsmENyogTSEv_xHaVgmj-Q",
+      "p": "6KfLYMRNQ469Lo2CjQhwOUWSvmtQNiHBINh6HGg8ChWnIX59FBdDrCzfIJB0awnqrWXy2JBKWAUdzk4juNTVVEg1CvSbYkaRRTrD621mj-irQ_kS6wPivuqtRawzpA7x5urVM1CtmbcWC0pcqiPRDxL8BDVV6C2fXpwpPEdQWq8",
+      "q": "7FF6cXgi_NfNQqz_eHGHOekTwSWTmfDze0HbGBdzBFeIGw6Rj3KMI9-0ACqrJbKXFAIJfah9u0vSM506QkSdlASGuxSQ7Aw0rVwVhnyLfufCLURuLIJuapBn7Z53kNC9k--QmG0vR26kGiy0hrblfnX4hFAY3PmEtwbyisJ89dc",
+      "qi": "hy1F6SLwL1EjOScBk8JEGDEOnmd5vCeNKSf8xzxX0xNC17ktpBbidG7vKw7IoIZ8C6OZjfmyUKPtUgCFSTNdg6LZNdoMkq2mlB-8ba53-J9HPOi4BzZWuj-z-Pz5FvlVwqgsXhKESpe1MIUM6DLESVW8canRmPj_-0dUA0dQvzM",
+      "use": "sig"
+    },
+    {
+      "d": "Bym2uXJ9DWYqVZcsmmOrYTbq8TPrTklu978Z7uYq-BCkpsd_KeYmHpRKH-pLcWxtHEnccNO7KB-rfgNYMN8xrr5qLnM5AZV9jTGJ1PKqi9im4p6dCeOskYl5yds9_-1FGfoD735yhHCwPJVJdkHbYKsrfYbxH4mxZPNDZNg6C4E6UXglcW30RUtStKt-y-tWWM1ndHESn3agKqT9PcL4SgirPXJI-5ozKD8E1oaC0jfvkZ4Zddp1ldZuCptLJkBYvQ1oR0cd6afZV70rgp7_uVMJOyGRKBljSvi4rJn8kEGo0k4ODFZdyGAio6MmdnV0fsav2sAOeL0vQxgRQ5vcaw",
+      "dp": "j6lpbb-oAuwyiZwGxYDzMqwZ5ZAuNcaNFqAjkbdX4kSDA8Si21GX5NXalqv62rbyKZ6McmZE2noT0mShDzlB5_MxeFitzofUfhgORT1kvaKRGfzlnZh2wnUVwO3BQKXdGO9c6E9n6tU1PnQzsz3cQZua3-oPe0lB-jiuVSFKvC8",
+      "dq": "fiIdjxsE-6KaWoyG5SZ5m5PcFJ7FsxJu6WwPkNYK25aGhgiAAYoGP4oKTqAPh6HyOfmFV90xsvng9dkz_UDr2YvCqXPoyCc7w-WY1WzBeDrInm7muC3uX1U-AYoO5zwEkHwYyzoo-RMjtu8_KZZWFj3PIJUva3isGZtb0eE5HTc",
+      "e": "AQAB",
+      "kid": "rsa-test-3",
+      "kty": "RSA",
+      "n": "nLjKmpa-Mz_G_FzCSXyxYUqYJrp-JxJ2ycQJbPie0KMhLa6L4UV0X_OnyuaRZti_8Y3LeRnjeoyInsTYPxgkgC6rh7YP-k3ViICafXgtJS0YxxeNneKms0xkLo6UuX7gSGY72FPtnYMrDh21kcCQxln1xF6nXtUxupKaWQ8yhIzJFdaHjUU6A9F1LUt5GmxArskIRR--VPT134gyRG84mIMOJakLTR1MNr7f9NL9iuHD1Z74ynrw_L7AVNH0iJp-MOqCJB7XKe8G0_uKmnDUpqpduSPMX9I0MeSt9kRMm_M4ep9JYhFrGkFKk550zEZfURSutUjbI1INjRLKVUnueQ",
+      "p": "xkKEQF7-d33rQWXcGGLZGpl0kpL7cdGD26bOYKvdZnatovyRyVRouPRN7l1X2zkx5Oj6AVc76T7R138dnEX6SBRzA5MpgnsADxNOXzWI__2qFe3wXpuLuiKp2deBgOSN8SgL_Llgm8E7GL7t7sTViM91isdFKjJ5iVJIFW515y8",
+      "q": "yl1dFCB9FJ8-dSxMPfn9CtUQELaPKXgujNzhN0dSlxsK8HusQsTE9_LgP9Z51zx7VW-qxxfHzHuVopKlee4LtavPhrZe5SIvlgV09F9GuqUXFsPTTFEvmwyMcq-qk5sTQveEKQEsVYhRbwNae05XbZPaXOqPh9MtBHo9fKNWGtc",
+      "qi": "plJ9UtPEZiZjExQUuDbqmTqi9TdUX7CxdYpXSVkCW46DTo-lj8-gqthzErQseoxIwu3X13LdDHhgozQgvBck7NF_6v9BqclFc6ZFZwAtcghEhK7aWnhQRo5lSti9z97mNx2gEtF2fCLTpc5Pa_2L6lxbds7Bzv0u00cXRbwzHIA",
+      "use": "sig"
+    }
+  ]
+}

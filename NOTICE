@@ -1,0 +1,10 @@
+ProudAuth SDK for Dart
+Copyright 2026 The ProudAuth Authors
+
+Extracted from the ProudAuth working tree with original Apache-2.0 attribution.
+SOURCE-MANIFEST.json records the pre-migration source HEAD and input hashes.
+No package registry release has been published by this extraction.
+
+Runtime dependencies crypto and http are distributed under BSD-3-Clause.
+Test vectors use Go-generated synthetic keys and published RFC 8032 examples;
+see test/vectors/README.md for provenance and independent verification oracles.

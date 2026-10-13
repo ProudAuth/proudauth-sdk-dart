@@ -1,0 +1,91 @@
+{
+  "audience": "https://api.example.test/orders",
+  "cases": [
+    {
+      "name": "valid_es256",
+      "token": "eyJhbGciOiJFUzI1NiIsImtpZCI6ImVzLXZlYyIsInR5cCI6ImF0K2p3dCJ9.eyJhdWQiOiJodHRwczovL2FwaS5leGFtcGxlLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjdG9yLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLmV4YW1wbGUudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWN0b3IiLCJzY29wZSI6Im9yZGVyczpyZWFkIiwic3ViIjoidXNyX3ZlY3RvciIsInRva2VuX2tpbmQiOiJ1c2VyX2FjY2VzcyJ9.Btqn1zMpVCtjOLTe8EUt9kdXQ57soB_MzDAliYGpYMhXlsoR8VjAPaTAdWnFaRVjuB9T5jIC2z_3L_M6P1YU2w",
+      "expect": "accept",
+      "why": "ES256 token signed by Go"
+    },
+    {
+      "name": "valid_ps256_2048",
+      "token": "eyJhbGciOiJQUzI1NiIsImtpZCI6InBzLXZlYy0yMDQ4IiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS5leGFtcGxlLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjdG9yLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLmV4YW1wbGUudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWN0b3IiLCJzY29wZSI6Im9yZGVyczpyZWFkIiwic3ViIjoidXNyX3ZlY3RvciIsInRva2VuX2tpbmQiOiJ1c2VyX2FjY2VzcyJ9.AoXnhDDh7FxGIqO3ydKeCZMuXwR1F5FtH5rXocysKAKzREdtCWaPilNquieaANXnOBGZSuUNIZyt_tMWyFQ8EWCsoEmsS315FZxQIsrhkY5n9HAhx-_KWr5BmFBQfOw6IAVQnsqHIfGFuL7x8k2gWTjtGgzXc5Hjl6RZQJUqvXDL3YMV1vcgVCr4mT6E3NoPEFsYBhmKhcwGTCXxxzl5Z5Wp2zMFPqnFctNP9lg_3IR5aufUuvmwJ-aoDOklef5VmAPIQQf8vzjTbvNIrOhN1pE3EJ2CJ-xglID_XnOT1WUre_SKK0NVw5xHaeINIStv_q3Wo0thZod_3SqEUQZk2g",
+      "expect": "accept",
+      "why": "PS256 token signed by Go"
+    },
+    {
+      "name": "valid_ps256_4096",
+      "token": "eyJhbGciOiJQUzI1NiIsImtpZCI6InBzLXZlYy00MDk2IiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS5leGFtcGxlLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjdG9yLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLmV4YW1wbGUudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWN0b3IiLCJzY29wZSI6Im9yZGVyczpyZWFkIiwic3ViIjoidXNyX3ZlY3RvciIsInRva2VuX2tpbmQiOiJ1c2VyX2FjY2VzcyJ9.EiTZfq5GKrRuEZg3fl1wn69XkYgbJoKjRqxgp_RZR2UbHiroRiLgPjyanF4Yg98eTSuwkpQv2dUqZ0gTiz3moNnCadRiykqDs-Y0nh-RBhiovzFMan1EV6uH4Jtpn3glQggvB0PIv4A-DfaHuUIur0d245oF2cN-uhP09iy-zlkkfSd0RXEoqZ8CNHKwQB-oIJiSO3r-6nEJeVsz1w1XFTVC2jZxcO0TT_U05rfBHTd3_RjGrYmYTlO6BptDKi1fGPesWp_7U6RxqOC3oQJ-rw3GMWjTZgV7zC5lBOu8K6hji9UM8suEgpTQmLsQBlyi1j4hqKC470vT5RP4CXNiQgfTS99UORb9uetyWtT2wn_jecCh-Rs6ZLNeOx4cKwLqrHxHaz5oU8wJW9R8bdac4CGC0wJbZg5x1w9acOyfyA9bHVt50O7Y7VF18Lbqod7nDyWY0L2YfG2z1fU5xkv6Om61r6qFKf4uDnyRIS42lka27FA7-ENpzUldvjlPGYsTpORab6m8zyNqcHPsmVW04t5PMEJV2iuGpsZRKQk87vwd2Ycnk31m3xy6Sbeb_z9tvHJdy0L_9zL7wWpvFmMFraMdIJUoO84h6V2BlWm_bYTro9q0KaLg19VOlu84Bo62qQChf88SvUdYpIjWyYYSpM7hA8fccqnT_ufJ4_tu7-E",
+      "expect": "accept",
+      "why": "PS256 token, 4096-bit key"
+    },
+    {
+      "name": "es256_other_key_same_kid",
+      "token": "eyJhbGciOiJFUzI1NiIsImtpZCI6ImVzLXZlYyIsInR5cCI6ImF0K2p3dCJ9.eyJhdWQiOiJodHRwczovL2FwaS5leGFtcGxlLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjdG9yLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLmV4YW1wbGUudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWN0b3IiLCJzY29wZSI6Im9yZGVyczpyZWFkIiwic3ViIjoidXNyX3ZlY3RvciIsInRva2VuX2tpbmQiOiJ1c2VyX2FjY2VzcyJ9.UUR5TwWR067WmzlYCh58pZA98wPcgecGuUkBuWUScBOW9Z35_w3_o_e7uY0my4XJWzOixqLLt4pac0gwX95bBg",
+      "expect": "signature",
+      "why": "signed by another key under a known kid"
+    },
+    {
+      "name": "es256_der_signature",
+      "token": "eyJhbGciOiJFUzI1NiIsImtpZCI6ImVzLXZlYyIsInR5cCI6ImF0K2p3dCJ9.eyJhdWQiOiJodHRwczovL2FwaS5leGFtcGxlLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjdG9yLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLmV4YW1wbGUudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWN0b3IiLCJzY29wZSI6Im9yZGVyczpyZWFkIiwic3ViIjoidXNyX3ZlY3RvciIsInRva2VuX2tpbmQiOiJ1c2VyX2FjY2VzcyJ9.MEUCIQDR2R1DczFb_KLZsyyscGMQpkmx0MxIkGY1-cvL4-hQ1wIgJP6T8qB3u90DSDw7aX2fPLHckTDQt1JEN6mdYglzd_4",
+      "expect": "signature",
+      "why": "DER signature instead of r||s"
+    },
+    {
+      "name": "ps256_salt_0",
+      "token": "eyJhbGciOiJQUzI1NiIsImtpZCI6InBzLXZlYy0yMDQ4IiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS5leGFtcGxlLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjdG9yLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLmV4YW1wbGUudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWN0b3IiLCJzY29wZSI6Im9yZGVyczpyZWFkIiwic3ViIjoidXNyX3ZlY3RvciIsInRva2VuX2tpbmQiOiJ1c2VyX2FjY2VzcyJ9.NZr6AzIm65Pber7cW8n5Vys8SZCFMyVnUr-3DVyh6tKCv0Ly-xPIMd_jmpf6RvmXASwgxm7w4DBEKoFCcoT3MM-ErcKa2VgCV87GbJkfz30xWg4vQEMT6-YdxFzkYsnn_JsrHWDoPL6CktjG6WSlY81RQQGL6ipI_xPZkuHblr8z2IFGIG1GcfSD5eSW2QGUppW75ITfhxHJy0ti3aPDwPQuuAlF_RTKt42rAWjj4_bRqUfud8WP6idg69hkr1O-tILsyklIGL9MmOHwNdSBGulLrr0eZEuocQEee4gRHJMMk10Gn9gCiXZDY0krb872NSdomojn0HpuS72S7hSCwg",
+      "expect": "signature",
+      "why": "PSS salt must be 32 bytes"
+    },
+    {
+      "name": "ps256_header_rs256",
+      "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6InBzLXZlYy0yMDQ4IiwidHlwIjoiYXQrand0In0.eyJhdWQiOiJodHRwczovL2FwaS5leGFtcGxlLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjdG9yLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLmV4YW1wbGUudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWN0b3IiLCJzY29wZSI6Im9yZGVyczpyZWFkIiwic3ViIjoidXNyX3ZlY3RvciIsInRva2VuX2tpbmQiOiJ1c2VyX2FjY2VzcyJ9.LIXQ9EQRJXLjYp3jw92aJfklldWLqXPV8RuTW6R-H4ioUvpYMv2kGF1h_zaN6ebx_pbeJ91mZudktyozJlhjKqP5B8bmn3vXx0imri41YkK3D5mz8PbeHoByvyogzvDb_cI_WR8RXQY0vppsWndvWZpsg_IoiLg1G233JNzkeinYJDv5u9yBpQzpTXa565gNivWhKzFUVbCgK62tMifnItW0-FMt3suV_yTVykzWPRCYwl9z5p0cWTRCZJWC7x5WXpGNIR3m-IbYCqAlGpfu2hDVX0PwfoDs9rByUVw35gXvoeSP0RCe-luR1ACV9RNlhobvPq-aG8kQca3n1I2zrw",
+      "expect": "algorithm",
+      "why": "the JWK declares PS256"
+    },
+    {
+      "name": "es256_header_ps256",
+      "token": "eyJhbGciOiJQUzI1NiIsImtpZCI6ImVzLXZlYyIsInR5cCI6ImF0K2p3dCJ9.eyJhdWQiOiJodHRwczovL2FwaS5leGFtcGxlLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjdG9yLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLmV4YW1wbGUudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWN0b3IiLCJzY29wZSI6Im9yZGVyczpyZWFkIiwic3ViIjoidXNyX3ZlY3RvciIsInRva2VuX2tpbmQiOiJ1c2VyX2FjY2VzcyJ9.Y7NaiPJJzmySsD269eU3Acc37EzqPgO-EPpGiSpZgyqPRBaXm3NylDml2tta6VoDtTDWRa-goTL0ODoT3ogMOg",
+      "expect": "algorithm",
+      "why": "the JWK declares ES256"
+    },
+    {
+      "name": "es256_tampered_payload",
+      "token": "eyJhbGciOiJFUzI1NiIsImtpZCI6ImVzLXZlYyIsInR5cCI6ImF0K2p3dCJ9.eyJhdWQiOiJodHRwczovL2FwaS5leGFtcGxlLnRlc3Qvb3JkZXJzIiwiY2xpZW50X2lkIjoidmVjdG9yLWNsaWVudCIsImV4cCI6MTkwMDAwMDMwMCwiaWF0IjoxODk5OTk5OTkwLCJpc3MiOiJodHRwczovL2lkLmV4YW1wbGUudGVzdC9yZWFsbXMvbWFpbiIsImp0aSI6InRva192ZWN0b3IiLCJzY29wZSI6Im9yZGVyczpyZWFkIiwic3ViIjoidXNyX2FkbWluIiwidG9rZW5fa2luZCI6InVzZXJfYWNjZXNzIn0.Btqn1zMpVCtjOLTe8EUt9kdXQ57soB_MzDAliYGpYMhXlsoR8VjAPaTAdWnFaRVjuB9T5jIC2z_3L_M6P1YU2w",
+      "expect": "signature",
+      "why": "payload changed after signing"
+    }
+  ],
+  "description": "Full ES256 and PS256 access tokens signed by Go's standard library, for the Dart Verifier. Test-only keys.",
+  "issuer": "https://id.example.test/realms/main",
+  "jwks": {
+    "keys": [
+      {
+        "alg": "ES256",
+        "crv": "P-256",
+        "kid": "es-vec",
+        "kty": "EC",
+        "use": "sig",
+        "x": "XIb1hscUuYyz2eTt7tfGLu9utmIaW2qoa5ZQ-bscxlc",
+        "y": "JCjTpbwzVYeGOq45l6zWUMS33njJ2zi-4GQuod1L8n0"
+      },
+      {
+        "alg": "PS256",
+        "e": "AQAB",
+        "kid": "ps-vec-2048",
+        "kty": "RSA",
+        "n": "7JcW-iG0Ulv-FYbDEy_IkA0iVRSiNapCtYOIlMgS8RB0E1MXNwR76jbkBF9FYo-i7Tm8vaAyhnutswa1_Aow4Zv6F-DLpnQUyArutSEsGXpTq0-os_HyeGvVEa9MAB3OyY_g23vIuC2c-b1ESHXAm873xNRJYVaRA5LKjHpt2ShYnOjpMASPsTd7MmxHVwigWS03PfwlQ_yzVHHN7pUp3f4x1QsRGfyhdpHOZAoQlCZtP4RtI8l6cLu68m1km_wOFUuigDcd90NGLJm5a8nPKmtc6UYbLnhBrSxz2pC5dFQ01WkBcwnSfgcagRZ9AbPVtyE-T2pyRYT9t2jX7rrMCQ",
+        "use": "sig"
+      },
+      {
+        "alg": "PS256",
+        "e": "AQAB",
+        "kid": "ps-vec-4096",
+        "kty": "RSA",
+        "n": "wzJcikf57oVaaL8KuIGRfFHYkQbTiAi3DbNt9HHYIBuDEqFDlGvYVLWtl1-V0G-Y9YQvftAX34V_2x-NAdagqUD-B7jHS2s5AqeI4glpR-IPT7aszeaSlUcopZ3DMjKQr1XhBo0miI6-KiFaFRAtxRAH5Np_9vKHXJYIrQU5aYvP2bmd-7ZxVyWqCd1OuIpf51zLEYCyuG0wrTL6FN49MmiTO4DXQYxYfCH6Yl3dUtZT7_mF3o9J5zDK_NWBzaIWasLIbHNcIutObAU4WxgW_gez2Yg2TgpokvSLe1GSt2v4zxy6p9xPtp0x-T3867imftkZCsWQbsKiH_o6JwDjCEjC26kEJLgagi7KsRF87Aq5ew58_wku_z05yb8euW-wJjl9ORmMpukU74I9OufmNiQSinV8ioi8J-Fpjl0q2ELmQocXlwDAbKhjzJ_--3CgexS4toh4FKEQ6CWNnJTKpBAKHb8uzpY9u9edjNCPOgfPMEVMpAFohnmKk10AJYYDRQNhn2svCr3GX9MjQpp6EkY55qYL3et8pH3KPoMYuhS2F-iR5L6hBXjkq2CKJg4cJ0cCkhvGqvV6LcI6PZ4knKTJUu9b_1HcO1BpDdxgqeDriT-ITQ6hI6O6r2taRhI7pBM8HvOKTjvkbYOMW4ByHZzncKWR-ZdFO02O1SuEWEk",
+        "use": "sig"
+      }
+    ]
+  },
+  "now": 1900000000
+}

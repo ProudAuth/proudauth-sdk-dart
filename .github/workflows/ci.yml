@@ -1,0 +1,33 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: dart-lang/setup-dart@6afc89df92d6eb3834022f73cd65adc8cdfcb92d # v1
+        with:
+          sdk: "3.13.3"
+      - name: Verify vendored contracts
+        run: python3 scripts/check-contracts.py
+      - name: Locked dependencies
+        run: dart pub get --enforce-lockfile
+      - name: Analyze, format and test
+        run: |
+          dart analyze
+          dart format --output=none --set-exit-if-changed .
+          dart test
