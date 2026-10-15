@@ -5,8 +5,8 @@ description: >-
   a backend-for-frontend OIDC client and a typed administration client.
 version: 0.2.0
 publish_to: none
-repository: https://github.com/proudbase/proudauth-sdk-dart
-issue_tracker: https://github.com/proudbase/proudauth-sdk-dart/issues
+repository: https://github.com/proudauth/proudauth-sdk-dart
+issue_tracker: https://github.com/proudauth/proudauth-sdk-dart/issues
 homepage: https://proudauth.com/docs/
 
 environment:

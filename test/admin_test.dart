@@ -82,7 +82,7 @@ void main() {
         final input = jsonDecode(body) as Map<String, Object?>;
         if (input['email'] == 'dup@example.test') {
           return respondJson(req, 409, {
-            'type': 'https://auth.proudbase.com/problems/conflict',
+            'type': 'https://proudauth.com/problems/conflict',
             'code': 'conflict',
             'title': 'Conflict',
             'detail': 'identifier already in use',
@@ -222,7 +222,7 @@ void main() {
             .having((e) => e.title, 'title', 'Conflict')
             .having((e) => e.detail, 'detail', 'identifier already in use')
             .having((e) => e.type, 'type',
-                'https://auth.proudbase.com/problems/conflict')
+                'https://proudauth.com/problems/conflict')
             .having((e) => e.errors, 'errors', {'email': 'taken'})
             .having((e) => e.requestId, 'requestId', 'req_1')
             .having((e) => e.extra['retryable'], 'extra.retryable', false)
