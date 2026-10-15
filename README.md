@@ -4,7 +4,7 @@
 > No package-registry release or stable-support window is promised yet.
 > [Documentation](https://proudauth.com/docs/) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
 
-[![CI](https://github.com/proudbase/proudauth-sdk-dart/actions/workflows/ci.yml/badge.svg)](https://github.com/proudbase/proudauth-sdk-dart/actions/workflows/ci.yml)
+[![CI](https://github.com/proudauth/proudauth-sdk-dart/actions/workflows/ci.yml/badge.svg)](https://github.com/proudauth/proudauth-sdk-dart/actions/workflows/ci.yml)
 
 The first-party Dart SDK for ProudAuth (spec §28, SDK-001 to SDK-009). It is
 a port of the Node.js SDK in `sdk/node`, which itself ports the Go SDK in
@@ -59,7 +59,7 @@ dependencies:
 dependencies:
   proudauth_sdk:
     git:
-      url: https://github.com/proudbase/proudauth-sdk-dart.git
+      url: https://github.com/proudauth/proudauth-sdk-dart.git
       ref: <tag or commit>
 ```
 
@@ -409,7 +409,7 @@ await for (final user in admin.users('ann')) {          // follows next_cursor
 try {
   await admin.createUser({'email': 'a@example.com'}, RequestOptions(idempotencyKey: savedKey)); // reuse the key when retrying
 } on ProblemException catch (e) {
-  print('${e.status} ${e.code} ${e.errors}');           // RFC 9457; e.type is https://auth.proudbase.com/problems/<code>
+  print('${e.status} ${e.code} ${e.errors}');           // RFC 9457; e.type is https://proudauth.com/problems/<code>
 }
 
 final got = await admin.getUser('usr_1');
